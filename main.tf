@@ -1,4 +1,3 @@
-#Security Group resource
 resource "aws_security_group" "main" {
   name        = local.resource_name
   description = "Security group for ${var.instance}"
@@ -14,6 +13,6 @@ resource "aws_security_group" "main" {
   tags = merge(
     local.module_tags,
     { Name = local.resource_name },
-    var.security_group_tags
+    var.sg_tags
   )
 }

@@ -7,8 +7,8 @@
 * `project` *string* (Mandatory) : User must provide their project name.
 * `environment` *string* (Mandatory) : User must provide the envirmonment(PROD, DEV, QA).
 * `instance` *string* (Mandatory) : User must provide the security group instance name.
-* `security_group_tags` map(string) (Optional) : User can supply tags to attach to created security group. By default it is empty.
+* `sg_tags` map(string) (Optional) : User can supply tags to attach to created security group. By default it is empty.
 
 ## Outputs
 
-* `security_group_id` : ID of the created security group.
+* `id` : ID of the created security group.
